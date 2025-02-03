@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MCA LE-TECH 2K24</title>
+  <link rel="icon" href="logo.png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: "Montserrat", sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+    .sidebar {
+      width: 120px;
+      background: #222;
+      position: fixed;
+      height: 100%;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      overflow-x: hidden;
+      padding-top: 20px;
+    }
+    .sidebar img {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .sidebar a {
+      padding: 10px;
+      text-align: center;
+      display: block;
+      color: #fff;
+      text-decoration: none;
+    }
+    .sidebar a:hover {
+      background-color: #444;
+    }
+    .main-content {
+      margin-left: 120px;
+      padding: 20px;
+    }
+    @media (max-width: 768px) {
+      .sidebar {
+        display: none;
+      }
+      .main-content {
+        margin-left: 0;
+      }
+    }
+    .event-card {
+      background-color: #333;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+    .event-card h3 {
+      color: #fff;
+    }
+    .event-card p {
+      color: #ddd;
+    }
+  </style>
+</head>
+<body>
+  <!-- Sidebar -->
+  <nav class="sidebar d-none d-md-block">
+    <img src="logo.png" alt="Logo">
+    <a href="#home" class="active">
+      <i class="bi bi-house"></i>
+      <p>Home</p>
+    </a>
+    <a href="#tech">
+      <i class="bi bi-gear"></i>
+      <p>Technical</p>
+    </a>
+    <a href="#non-tech">
+      <i class="bi bi-person"></i>
+      <p>Non-Technical</p>
+    </a>
+    <a href="#contact">
+      <i class="bi bi-info-circle"></i>
+      <p>About Us</p>
+    </a>
+  </nav>
+
+  <!-- Navbar for small screens -->
+  <nav class="navbar navbar-dark bg-dark d-md-none">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#home">LE-TECH 2K24</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tech">Technical</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#non-tech">Non-Technical</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">About Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <!-- Header -->
+    <header id="home" class="text-center py-5">
+      <img src="logo.png" alt="Logo" class="img-fluid mb-3" width="100">
+      <h1 class="display-1">LE-TECH 2K24</h1>
+      <h2>S.A. Engineering College</h2>
+      <h5>National Level Technical Symposium</h5>
+      <h5>Entry : Per head <span class="text-warning">Rs.100</span></h5>
+      <img src="trophy-beker-1-unscreen.gif" alt="Trophy" class="img-fluid my-4" width="200">
+    </header>
+
+    <!-- Technical Events -->
+    <section id="tech" class="my-5">
+      <h2>Technical Events</h2>
+      <hr class="w-25 mx-auto">
+      <div class="event-card">
+        <h3>Demo Talk</h3>
+        <h6>Basic rules about this event:</h6>
+        <p>
+          1. Maximum of 2 Participants in a Team.<br>
+          2. Presentation Duration 5 - 10 Minutes (Including Q&A).<br>
+          3. Based on the Presentation and Responses to the Questions will be evaluated.
+        </p>
+        <h4>Event Coordinator</h4>
+        <h5>Dr. V. Sujatha, Ph.D.,<br>Head/MCA</h5>
+        <h4>Student Volunteer</h4>
+        <ul>
+          <li>Ms. Vaishali S C</li>
+          <li>Ms. Aishwarya H</li>
+          <li>Mr. Pachaiyappan S</li>
+        </ul>
+        <p>
+          <i class="bi bi-clock"></i> 10:15AM - 11:15AM <br>
+          <i class="bi bi-geo-alt"></i> Main-Block MCA Seminar Hall
+        </p>
+      </div>
+      <!-- Add more event cards similarly -->
+    </section>
+
+    <!-- Non-Technical Events -->
+    <section id="non-tech" class="my-5">
+      <h2>Non-Technical Events</h2>
+      <hr class="w-25 mx-auto">
+      <div class="event-card">
+        <h3>IPL Auction</h3>
+        <h6>Basic rules about this event:</h6>
+        <p>
+          1. Maximum of 2 Participants in a Team.<br>
+          2. Prelims will be conducted in the form of quiz.<br>
+          3. Only Selected teams will advance to the Final round.<br>
+          4. Final Round: Auction.<br>
+          5. Final Round Details will be announced on the day of the event.
+        </p>
+        <h4>Event Coordinator</h4>
+        <h5>Mrs. K. Malathy, MCA., (Ph.D.)<br>Assistant Professor / MCA</h5>
+        <h4>Student Volunteer</h4>
+        <ul>
+          <li>Mr. Bharath Kumar M</li>
+          <li>Mr. Mohamed Roshan Akthar M</li>
+          <li>Mr. Akash P</li>
+          <li>Mr. Senthamilselvan K</li>
+        </ul>
+        <p>
+          <i class="bi bi-clock"></i> 10:15AM - 11:00AM <br>
+          <i class="bi bi-geo-alt"></i> Main Block MCA
+        </p>
+      </div>
+      <!-- Add more event cards similarly -->
+    </section>
+
+    <!-- About Us -->
+    <section id="contact" class="my-5">
+      <h2>About Us</h2>
+      <hr class="w-25 mx-auto">
+      <div class="event-card">
+        <p><i class="bi bi-geo-alt"></i> S.A. Engineering College</p>
+        <p><i class="bi bi-person"></i> Convener: Dr. R. Anitha AP/MCA</p>
+        <p><i class="bi bi-phone"></i> Phone: 9940031460</p>
+        <p><i class="bi bi-person"></i> Co-Convener: Mrs. R. Rajeshwari AP/MCA</p>
+        <p><i class="bi bi-phone"></i> Phone: 7358635695</p>
+        <p><i class="bi bi-envelope"></i> Email: letech24@saec.ac.in</p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4">
+      <p class="mb-0">Powered by <a href="https://www.saec.ac.in/" target="_blank" class="text-warning">saec.ac.in</a></p>
+    </footer>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -11,105 +11,41 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="assert/css/style.css">
-  <style>
-    body {
-      font-family: "Montserrat", sans-serif;
-      background-color: #000;
-      color: #fff;
-    }
-    .sidebar {
-      width: 120px;
-      background: #222;
-      position: fixed;
-      height: 100%;
-      z-index: 1;
-      top: 0;
-      left: 0;
-      overflow-x: hidden;
-      padding-top: 20px;
-    }
-    .sidebar img {
-      width: 100%;
-      margin-bottom: 20px;
-    }
-    .sidebar a {
-      padding: 10px;
-      text-align: center;
-      display: block;
-      color: #fff;
-      text-decoration: none;
-    }
-    .sidebar a:hover {
-      background-color: #444;
-    }
-    .main-content {
-      margin-left: 120px;
-      padding: 20px;
-    }
-    @media (max-width: 768px) {
-      .sidebar {
-        display: none;
-      }
-      .main-content {
-        margin-left: 0;
-      }
-    }
-    .event-card {
-      background-color: #333;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 10px;
-    }
-    .event-card h3 {
-      color: #fff;
-    }
-    .event-card p {
-      color: #ddd;
-    }
-  </style>
 </head>
 <body>
-  <!-- Sidebar -->
-  <nav class="sidebar d-none d-md-block">
-    <img src="logo.png" alt="Logo">
-    <a href="#home" class="active">
-      <i class="bi bi-house"></i>
-      <p>Home</p>
-    </a>
-    <a href="#tech">
-      <i class="bi bi-gear"></i>
-      <p>Technical</p>
-    </a>
-    <a href="#non-tech">
-      <i class="bi bi-person"></i>
-      <p>Non-Technical</p>
-    </a>
-    <a href="#contact">
-      <i class="bi bi-info-circle"></i>
-      <p>About Us</p>
-    </a>
-  </nav>
+ 
 
   <!-- Navbar for small screens -->
-  <nav class="navbar navbar-dark bg-dark d-md-none">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#home">LE-TECH 2K24</a>
+      <a class="navbar-brand" href="index.html">
+        <img class="nav-logo" src="assert/logo.png" alt="Logo" width="60" height="60" class="d-inline-block align-text-top">
+        LE-TECH 2K25
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#home">Home</a>
+            <a class="nav-link active" href="index.html">
+              <i class="bi bi-house"></i> Home
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#tech">Technical</a>
+            <a class="nav-link" href="index.html#tech">
+              <i class="bi bi-gear"></i> Events
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#non-tech">Non-Technical</a>
+            <a class="nav-link" href="rules.html">
+              <i class="bi bi-person"></i> Rules & Regulations
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">About Us</a>
+            <a class="nav-link" href="#contact">
+              <i class="bi bi-info-circle"></i> About Us
+            </a>
           </li>
         </ul>
       </div>
@@ -120,12 +56,9 @@
   <div class="main-content">
     <!-- Header -->
     <header id="home" class="text-center py-5">
-      <img src="logo.png" alt="Logo" class="img-fluid mb-3" width="100">
-      <h1 class="display-1">LE-TECH 2K24</h1>
-      <h2>S.A. Engineering College</h2>
-      <h5>National Level Technical Symposium</h5>
-      <h5>Entry : Per head <span class="text-warning">Rs.100</span></h5>
-      <img src="trophy-beker-1-unscreen.gif" alt="Trophy" class="img-fluid my-4" width="200">
+      <br>
+      <br>
+      <p class="rule-title">Rule Book</p>
     </header>
 
     <!-- Technical Events -->
@@ -193,11 +126,9 @@
       <hr class="w-25 mx-auto">
       <div class="event-card">
         <p><i class="bi bi-geo-alt"></i> S.A. Engineering College</p>
-        <p><i class="bi bi-person"></i> Convener: Dr. R. Anitha AP/MCA</p>
-        <p><i class="bi bi-phone"></i> Phone: 9940031460</p>
-        <p><i class="bi bi-person"></i> Co-Convener: Mrs. R. Rajeshwari AP/MCA</p>
+        <p><i class="bi bi-person"></i> Convener: Mrs. R. Rajeshwari AP/MCA</p>
         <p><i class="bi bi-phone"></i> Phone: 7358635695</p>
-        <p><i class="bi bi-envelope"></i> Email: letech24@saec.ac.in</p>
+        <p><i class="bi bi-envelope"></i> Email: letech@saec.ac.in</p>
       </div>
     </section>
 

@@ -1,8 +1,10 @@
 body {
-  background-image:url(../bg1.jpg) ;
+  background-image: url(../bg1.jpg);
+  background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   font-family: "Montserrat", sans-serif;
+  background-color: #000;
   color: #fff;
   margin: 0;
 }
@@ -127,17 +129,9 @@ p {
 
 li {
   color: #ffffff;
-  
 }
 
 
 .event-card button{
   border-radius: 10px;
-}
-.event-card a{
-  text-decoration: none;
-  
-}
-.rule-title{
-  font-size: 100px;
 }

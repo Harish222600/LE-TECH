@@ -9,6 +9,18 @@ body {
   margin: 0;
 }
 
+.reg-button{
+  background-color: #ff5500;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
 
 @media (max-width: 768px) {
   body {
@@ -72,7 +84,6 @@ body {
   border-color: blueviolet;
   padding: 20px;
   margin-bottom: 20px;
-  text-align: center;
 }
 
 .event-card img {
@@ -129,11 +140,21 @@ p {
 
 li {
   color: #ffffff;
+
+  list-style-type:none;
+  
 }
 
 
 .event-card button{
   border-radius: 10px;
+}
+.event-card a{
+  text-decoration: none;
+  
+}
+.rule-title{
+  font-size: 100px;
 }
 .rule-title{
   font-size: 100px;
@@ -142,3 +163,4 @@ li {
 .coordinators{
   list-style-type: none;
 }
+
